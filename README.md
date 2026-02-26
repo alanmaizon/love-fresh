@@ -28,6 +28,11 @@ This project includes a GitHub Actions workflow (`.github/workflows/deploy.yml`)
 2. In your GitHub repository settings, go to **Pages**.
 3. Under **Build and deployment**, select **GitHub Actions** as the source.
 4. The workflow will automatically build the `dist` folder and deploy it.
+5. Configure your DNS provider so your custom domain points to GitHub Pages:
+   - `A` records for apex/root domain: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - `CNAME` record for `www`: `<your-github-username>.github.io`
+
+The repository includes `public/CNAME`, so the deployed site keeps the `lovefresh.me` custom domain.
 
 ## Demo Script
 
